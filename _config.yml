@@ -1,0 +1,53 @@
+name: Blog-theme 
+title: Blog Theme 
+email: rc4329915@gmail.com
+address: sangrur, punjab
+phone: '8699594438'
+tagline: BlogTheme - Smartest and quickly creating bloging site.
+description: BlogTheme provides Creating Blog Site very easily step by step.
+baseurl: ''
+permalink: /blog/:title
+author_name: Manpreet Choudhary
+url: https://example.com
+copyright_text: © 2020 Blog Theme 
+facebook_username: https://www.facebook.com/
+twitter_username: https://twitter.com/
+slack_username: https://slack.com/intl/en-in/
+favicon: /assets/images/avatar.png
+paginate: '3'
+paginate_path: '/blog/page:num/'
+keyboard: "Blogpost,Blogger"
+sass:
+  sass_dir: _sass
+  style: compressed
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+google_analytics: 'G-PWRSRVE5S5'
+hero: product_fixed_image
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+whitelist:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+getform_id:
+mailchimp:
+  user-id:
+  list-id:
+copyright_text: © 2020 Math-World
+company_url: https://math-world.com
+twitter:
+  username:
+facebook:
+  username:
+  app_id:
+  publisher:

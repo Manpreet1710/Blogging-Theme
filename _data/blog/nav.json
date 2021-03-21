@@ -1,0 +1,14 @@
+{
+    "navbarBrandText": "",
+    "navbarBrandLogo": "/assets/images/bebo-logo.svg",
+    "navItems":[
+        {
+         "name":"",
+         "url":""
+        },
+        {
+         "name":"",
+         "url":""
+       }
+     ]
+}

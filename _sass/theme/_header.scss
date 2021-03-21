@@ -1,0 +1,136 @@
+body {
+  font-family: Quicksand, sans-serif !important;
+}
+
+.navigationBottomLine {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  background: $white;
+  border-bottom: 1px solid $offwhite;
+  transition: top 0.2s ease-in-out;
+
+  .manul-navbar-toggler {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    border-color: transparent !important;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    padding: 25px 0;
+    .transforming-bars {
+      position: relative;
+      height: 2px;
+      width: 25px;
+      background-color: $black;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background-color: $black;
+        bottom: 10px;
+        transition: all 0.2s linear;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        height: 2px;
+        width: 30px;
+        background-color: $black;
+        transition: all 0.2s linear;
+      }
+    }
+  }
+  .barsActive {
+    height: 0 !important;
+    &::before {
+      transform: rotate(45deg);
+      bottom: 0 !important;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      top: 0 !important;
+    }
+  }
+  .navbar__nav {
+    width: 100%;
+    justify-content: flex-end;
+    .nav-item {
+      padding: 0 1rem;
+    }
+    .nav-link {
+      font-size: 0.9rem;
+    }
+  }
+  .activeNav {
+    background-color: $black;
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transition: all 0.3s linear;
+    width: 0;
+    z-index: 9;
+  }
+  @media (max-width: 992px) {
+    .nav-item {
+      padding: 30px !important;
+    }
+    .nav-link {
+      padding: 0 !important;
+      color: $white !important;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      width: 100% !important;
+    }
+  }
+}
+
+.lunrsearchresult {
+  .title {
+    color: #d9230f;
+  }
+  .url {
+    color: silver;
+  }
+  a {
+    display: block;
+    color: #777;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &:hover .title {
+    text-decoration: underline;
+  }
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  border: none;
+  background: transparent;
+  &:focus {
+    outline: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .bd-search {
+    padding: 10px 25px;
+  }
+}

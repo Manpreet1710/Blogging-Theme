@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg  navbar-light">
+    <div class="container-fluid p-0">
+        {%- assign navbar = site.data.blog.nav -%}
+        {% if navbar.navbarBrandText != "" %}
+        <a class="navbar-brand" href="/" title="{{navbar.navbarBrandText}}">{{navbar.navbarBrandText}}</a>
+
+        {% else %}
+        <a href="/">
+            <img class="logo-height" src="{{navbar.navbarBrandLogo}}"
+             alt="{{navbar.navbarBrandLogo}}" class="navbar-brand-image"
+             height="40px" width="40px">
+        </a>
+        {% endif %}
+        <div class="manul-navbar-toggler navbar-toggler">
+            <div class="transforming-bars"></div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__nav">
+                {%- for item in site.data.blog.nav.navItems -%}
+                <li class="nav-item">
+                    <a class="nav-link" href="/{{item.url}}">{{item.name}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <form action="">
+            <input type="text" class="form-control" placeholder="Serach"
+             style="border-bottom: 1px solid;
+                    border-left:none; border-right:0; border-top:none;
+                     border-radius: 5px;
+                    
+                    
+                    ">
+        </form>
+    </div>
+</nav>

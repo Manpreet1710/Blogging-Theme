@@ -1,0 +1,36 @@
+.bottompagination {
+  .pointerup {
+    margin-bottom: -9px;
+    margin-left: 49%;
+    font-size: 30px;
+  }
+  .pointerup i {
+    color: #eaeaea;
+  }
+  .navigation {
+    display: block;
+    font-size: 0.93rem;
+    padding: 15px 0 0 0;
+    text-align: center;
+    margin-bottom: 0;
+    color: #999;
+    border-top: 1px solid #ddd;
+  }
+  .pagination2 {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    display: block;
+    color: green;
+    font-size: 15px;
+    margin-bottom: 30px;
+    .pageUrl {
+      color: green !important;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 0 3px;
+    }
+  }
+}
