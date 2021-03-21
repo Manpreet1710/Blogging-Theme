@@ -24,36 +24,35 @@
             </div>
             <!-- close -->
 
-            <div class="row">
-                {% for post in paginator.posts %}
-                <div class="col-lg-4 col-md-6 mb-4 card-group">
-                    <div class="card h-100" style="border-radius:5px;">
+              <div class="row">
+                {% for post in paginator.posts%}
+                <div class="col-lg-3 col-md-6 mb-4 card-group">
+                    <div class="card h-100" style="border-radius:16px" id="{{post.categories}}">
                         <a href="{{ post.url }}">
-                            <img src="{{ post.image }}" class="card-img-top" 
-                            alt="">
+                            <img src="{{ post.image }}" class="card-img-top p-3" style="border-radius: 25px; height: 170px;"
+                                alt="not found">
                         </a>
                         <div class="card-body">
                             <a href="{{ post.url }}" class="anchor_link">
-                                <h4 class="card-title mb-4">{{ post.title }}</h4>
+                                <h1 class="card-title mb-4">{{ post.title }}</h1>
                             </a>
                         </div>
-
                         {% assign author = site.data.blog.authors[post.author] %}
-                        <div class="card-footer bg-white">
+                        <div class="card-footer">
                             <div class="wrapfooter">
-                                {% if post.author %}
                                 <span class="meta-footer-thumb">
                                     <img class="author-thumb" src="{{ author.image }}" alt="{{ author.name }}">
                                 </span>
-                                {% endif %}
-
                                 <span class="author-meta">
                                     <span class="post-name">
-                                        <a target="_blank" href="/blog">{{post.author}}</a>
+                                        <a target="_blank" href="/">{{post.author}}</a>
                                     </span><br>
                                     <span class="post-date">{{post.date | date_to_string }}</span>
                                 </span>
-                                <span class="post-read-more "><a class="text-dark" href="{{ post.url }}" title="Read Story">Read More</a></span>
+                                <span class="post-read-more">
+                                    <a href="{{ post.url }}" title="Read Story">
+                                        Read More
+                                    </a></span>
                             </div>
                         </div>
                     </div>
@@ -69,7 +68,6 @@
     {% include footer/index.html %}
 
     {% include scripts.html %}
-    <script src="{{ '/assets/js/TopScroll.js' | relative_url }}"></script>
 </body>
 
 </html>

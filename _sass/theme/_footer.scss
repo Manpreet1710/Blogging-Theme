@@ -23,8 +23,8 @@
     border-radius: 5px;
     padding: 4px 20px !important;
     border: none;
-    color: $black;
-    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: $white;
+    background: #00ab6b;
   }
 }
 .footer__link {
@@ -40,7 +40,7 @@
 .s_link {
   margin: 0 20px;
   font-size: 1rem;
-  color: deepskyblue;
+  color: #00ab6b;
   z-index: 99999;
   border-radius: 100%;
 }

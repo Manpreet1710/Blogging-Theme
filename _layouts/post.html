@@ -43,7 +43,7 @@
                     {% include author_bio.html %}
                     {% endif %}
 
-                    <div class="post-content">
+                    <div class="post-content fetch-posts-content mt-5">
                         {{ content }}
                     </div>
                     {%- include paginationPostPage.html -%}
@@ -56,8 +56,8 @@
             </div>
     </section>
     {%- include section/count.html -%}
+    {%- include footer/index.html -%}
     {% include scripts.html %}
-    <script src="{{ '/assets/js/TopScroll.js' | relative_url }}"></script>
 </body>
 
 </html>

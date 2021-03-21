@@ -1,0 +1,85 @@
+{
+    "footerMenu": {
+      "dropdown": [{
+       "categoryName":"Cricket Posts",
+       "links": [
+          {
+            "name": "blog1",
+            "url":"/"
+          },
+          {
+            "name": "blog2",
+            "url":"/"
+          },
+          {
+            "name": "blog3",
+            "url":"/"
+          }
+        ]
+      },
+      {
+        "categoryName":"Latest Posts",
+        "links": [
+           {
+             "name": "blog1",
+             "url":"/"
+           },
+           {
+            "name": "blog1",
+            "url":"/"
+          },
+          {
+            "name": "blog1",
+            "url":"/"
+          }
+          
+         ]
+       },
+       {
+        "categoryName":"Website Name",
+        "links": [
+           {
+             "name": "Terms and conditions",
+             "url":"/"
+           },
+           {
+             "name": "Privacy Policy",
+             "url":"/"
+           },
+           {
+             "name": "Disclaimer",
+             "url":"/"
+           }
+         ]
+       }
+      ]
+    },
+
+    "socialIcon":[
+        {
+            "target": "_blank",
+            "href": "https://www.facebook.com/",
+            "i": "fab fa-facebook-square"
+        },
+        {
+            "target": "_blank",
+            "href": "https://twitter.com/",
+            "i": "fab fa-twitter-square"
+        },
+        {
+            "target": "_blank",
+            "href": "https://www.linkedin.com/",
+            "i": "fab fa-linkedin-in"
+        },
+        {
+            "target": "_blank",
+            "href": "https://github.com/",
+            "i": "fab fa-github"
+        },
+        {
+            "target": "_blank",
+            "href": "https://slack.com/intl/en-in/",
+            "i": "fab fa-slack"
+        }
+    ]
+}

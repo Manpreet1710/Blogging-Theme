@@ -1,8 +1,8 @@
 --------------------------------------
-BEST-BLOGGIN-THEME
+# BEST-BLOGGING-THEME
 --------------------------------------
 
-# THEME IMPORT GUIDE
+### THEME IMPORT GUIDE
 
 ------------------------------------------------
 HOW TO IMPORT THIS THEME IN YOUR JEKYLL PROJECT.
@@ -41,7 +41,7 @@ permalink: /blog/:title // IF YOU ARE SERVE BLOG SITE  LIKE, WWW.DOMAIN.COM THEN
 paginate: '12' // BY DEFAULT 12 BLOG POST IN SINGLE PAGE, IF YOU WANT TO CHANGE THEN CHANGE ACCORDILY.
 paginate_path: '/blog/page:num/'  // PAGINATE-PATH DENOTE WHEN WE WENT ANOTHER BLOG PAGE, THOSE URL LIKE THAT, WWW.DOMAIN.COM/BLOG/PAGE1/, ALSO CAN CHANGE.
              
-# Build settings
+### Build settings
 theme: best-blogging-theme //ENSURE THAT THEME NAME WILL BE SAME AS IN GEMFILE THEME NAME. IT IS MANDTARY ALSO IN CONFIG.YML FILE
 markdown: kramdown // IT WILL BE SAME .
              
@@ -65,7 +65,7 @@ STEP: 3  SO, AFTER BUNDLE INSTALL
 
 -----------------------------------------------------------------------------
        
-# blog layout Import guide:
+### blog layout Import guide:
 
 -------------------------------
 How to use blog layout by theme
@@ -76,17 +76,17 @@ If not then GO TO TOP:
 
 WE HAVE FOLLOWING TWO BLOG LAYOUTS:
 
-# 1. blog
-# 2. categories
+#### 1. blog
+#### 2. categories
 
 *******************************
 CREATE FILE FOR BLOG LAYOUT IN ROOT DIR:  
 OR ANYWHERE ITS DEPEND UPON YOU.
 *********************************
 
-# FOR EXAMPLE:
+#### FOR EXAMPLE:
 
-# index.html  
+#### index.html  
 //ensure that file extention will be .html, if .md then i am sure that you blog post pagination won't works.
 
 ---
@@ -95,7 +95,7 @@ title: BloggingSite  //Title of blog
 ---
 
 another example:
-# blog/index.html //inside blog folder
+#### blog/index.html //inside blog folder
 
 ---
 layout: blog 
@@ -106,15 +106,15 @@ title: BloggingSite  //Title of blog
 CREATE FILE FOR CATEGORIES LAYOUT IN ROOT DIR:  
 *********************************
 
-# FOR EXAMPLE
-# categories.md
+#### FOR EXAMPLE
+#### categories.md
 ---
 layout: categories
 title: BloggingSite Categories // TITLE OF BLOG Categories
 permalink: /categories
 ---
 
-#  IF YOU ARE USING BLOG LAYUT UNDER BLOG FOLDER
+#### IF YOU ARE USING BLOG LAYUT UNDER BLOG FOLDER
 ---
 layout: categories
 title: BloggingSite Categories // TITLE OF BLOG Categories
@@ -122,25 +122,25 @@ permalink: /blog/categories
 ---
 
 
-# Now,  you can see blog layout is visible in your project.
+#### Now,  you can see blog layout is visible in your project.
 
 THESE LAYOUTS DATA DRIVEN BY JSON DATA OR YML FILES, YOU IF YOU WANT CHANGE FOR EXAMPLE:
-# TITLE, META, NAVLINK, LOGO, BLOGTITLE, TAGLINE, FOOTERLINK ETC.
+#### TITLE, META, NAVLINK, LOGO, BLOGTITLE, TAGLINE, FOOTERLINK ETC.
 
 
 --------------------------------------------------------------------------
-# CREATE blog(folder) in _data(dir), for ex:) _data/blog
+#### CREATE blog(folder) in _data(dir), for ex:) _data/blog
 
 UNDER THESE FOLLOWING JSON OR YML FILES. YOU CAN CHANGE DATA ACOORDING ON YOUR PROJECT.
 
-# 1. authors.yml
-# 2. blog.yml
-# 3. nav.json
-# 4. share.yml
-# 5. footer.yml
-# 6. disquss comment system
+#### 1. authors.yml
+#### 2. blog.yml
+#### 3. nav.json
+#### 4. share.yml
+#### 5. footer.json
+#### 6. disquss comment system
 
-# authors.yml // BLOG POST AUTHOR CAN CHANGE HERE.
+#### authors.yml // BLOG POST AUTHOR CAN CHANGE HERE.
 
 Manpreet:
   name: Manpreet singh
@@ -148,7 +148,7 @@ Manpreet:
   bio: Author4 of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo.
   twitter: https://twitter.com/home
 
-# blog.yml  //CHANGE H1 OR TAGLING OF BLOG 
+#### blog.yml  //CHANGE H1 OR TAGLING OF BLOG 
 ---
 h1: Latest Posts from our Blog
 tagline: Best Blogging Site
@@ -156,7 +156,7 @@ tagline: Best Blogging Site
 --- 
 // REMOVE --- END OF THE LINE, ITS NOT REQUIRED. 
 
-# nav.json // NAVLINK CAN BE CHANGE .
+#### nav.json // NAVLINK CAN BE CHANGE .
 {
     "navbarBrandText": "", //NAVTEXT LIKE "bloggingsite"
     "navbarBrandLogo": "/assets/images/bebo-logo.svg",  //LOGO
@@ -174,9 +174,9 @@ tagline: Best Blogging Site
 
 you can add nav links according to your requirements.
 
-#  share.yml //if you want change sharing handle then you can
-#  Sharing options at the bottom of the post.
-#  Icons from <https://fontawesome.com/>
+#### share.yml //if you want change sharing handle then you can
+####  Sharing options at the bottom of the post.
+####  Icons from <https://fontawesome.com/>
 
 label: 'Share'
 platforms:
@@ -191,17 +191,119 @@ platforms:
     link: 'https://www.linkedin.com/sharing/share-offsite/?url=URL'
 
 
-# footer.yml 
+#### footer.json 
+{
+    "footerMenu": {
+      "dropdown": [{
+       "categoryName":"Cricket Posts",
+       "links": [
+          {
+            "name": "blog1",
+            "url":"/"
+          },
+          {
+            "name": "blog2",
+            "url":"/"
+          },
+          {
+            "name": "blog3",
+            "url":"/"
+          }
+        ]
+      },
+      {
+        "categoryName":"Latest Posts",
+        "links": [
+           {
+             "name": "blog1",
+             "url":"/"
+           },
+           {
+            "name": "blog1",
+            "url":"/"
+          },
+          {
+            "name": "blog1",
+            "url":"/"
+          }
+          
+         ]
+       },
+       {
+        "categoryName":"Website Name",
+        "links": [
+           {
+             "name": "Terms and conditions",
+             "url":"/"
+           },
+           {
+             "name": "Privacy Policy",
+             "url":"/"
+           },
+           {
+             "name": "Disclaimer",
+             "url":"/"
+           }
+         ]
+       }
+      ]
+    },
 
-# disquss comment system
+    "socialIcon":[
+        {
+            "target": "_blank",
+            "href": "https://www.facebook.com/",
+            "i": "fab fa-facebook-square"
+        },
+        {
+            "target": "_blank",
+            "href": "https://twitter.com/",
+            "i": "fab fa-twitter-square"
+        },
+        {
+            "target": "_blank",
+            "href": "https://www.linkedin.com/",
+            "i": "fab fa-linkedin-in"
+        },
+        {
+            "target": "_blank",
+            "href": "https://github.com/",
+            "i": "fab fa-github"
+        },
+        {
+            "target": "_blank",
+            "href": "https://slack.com/intl/en-in/",
+            "i": "fab fa-slack"
+        }
+    ]
+}
 
-ITS TWO FEATRUES WILL BE CONFIGRABLE VERY SOON.
-DOCS WIL BE COMMING VERY SOON:::
+<!-- IF YOU WANT TO CHANGE COPYRIGHT TEXT THEN GO TO CONFIG.YML FILE  AND EDIT COPYRIGHT TEXT VARIABLE -->
 
 
 
 
-# ENJOY THE BLOGGING THEME
+#### disquss comment system
+
+sO, NOW YOU CAN DISQUSS COMMENT SYSTEM VERY EASILY IN YOUR PROJECT.
+FIRST, YOU NEED TO CREATE ACCOUNT ON DISQUSS LINK: https://disqus.com/
+AFTER THAT, CREATE ACCOUNT AND SETUP COMMENT SYSTEM FOR WEBSITE.
+
+AFTER, CREATING ACCOUNT FOR WEBSITE, DISQUSS GIVE YOU SHORTNAME : FOR EXAMPLE : MYSITE
+
+JUST COPY THAT SHORTNAME AND PASTE IT IN CONFIG.YML.
+FOR EXAMPLE:
+
+CONFIG.YML
+
+disquss:
+   shortname: yourshortname
+
+after that you can see that comment system added to your website.
+
+
+
+## ENJOY THE BLOGGING THEME
 
 
 

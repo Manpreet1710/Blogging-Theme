@@ -4,7 +4,7 @@ categories:
   - Webdeveloper
 layout: post
 title: How to Become a Front-End Developer - A Step by Step 2021 Guide
-image: '/uploads/men.png'
+image: '/uploads/FrontEndDeveloper.jpg'
 author: Manpreet
 description: ''
 date: 2021-01-19 17:30:30 +0530

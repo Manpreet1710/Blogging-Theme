@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    best-blog-theme (0.1.0)
+    best-blogging-theme (0.1.2)
       jekyll (~> 3.9)
 
 GEM
@@ -73,7 +73,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  best-blog-theme!
+  best-blogging-theme!
   bundler
   jekyll-feed
   jekyll-include-cache

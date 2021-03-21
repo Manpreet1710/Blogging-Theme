@@ -17,6 +17,8 @@ favicon: /assets/images/avatar.png
 paginate: '3'
 paginate_path: '/blog/page:num/'
 keyboard: "Blogpost,Blogger"
+disqus:
+  shortname: thefrontendworld 
 sass:
   sass_dir: _sass
   style: compressed
@@ -43,7 +45,7 @@ getform_id:
 mailchimp:
   user-id:
   list-id:
-copyright_text: © 2020 Math-World
+copyright_text: © 2020 Website-Name — Made with  for the people of the internet.
 company_url: https://math-world.com
 twitter:
   username:
