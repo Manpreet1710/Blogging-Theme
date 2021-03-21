@@ -14,6 +14,7 @@ STEP:1 Add this lines of code in YOUR Gemfile. (so just copy it and paste it on 
 
 GEMFILE ->   
 
+*******************************************************************************
 source "https://rubygems.org"
 
 gem "jekyll", "~> 3.9.0"   // JEKYLL VERSION SHOULD BE SAME
@@ -30,11 +31,12 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem 'jekyll-paginate'
 end
+******************************************************************************************
 
 
 STEP: 2 Also add this line of code in  _config.yml. (so just copy it and paste it on your _config.yml)
  
-CONFIG.YML -> 
+###### CONFIG.YML -> 
 permalink: /blog/:title // IF YOU ARE SERVE BLOG SITE  LIKE, WWW.DOMAIN.COM THEN USE /title.
 // BUT IF YOU ARE SERVE BLOG SITE LIKE, WWW.DOMAIN.COM/BLOG THEN USE SAME AS GIVEN PERMALINK: /blog/title.
              
