@@ -8,6 +8,7 @@ description: BlogTheme provides Creating Blog Site very easily step by step.
 baseurl: ''
 permalink: /blog/:title
 author_name: Manpreet Choudhary
+designer: Ram chand
 url: https://example.com
 copyright_text: © 2020 Blog Theme 
 facebook_username: https://www.facebook.com/

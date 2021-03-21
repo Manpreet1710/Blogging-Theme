@@ -9,22 +9,36 @@
     {%- else -%}
     {%- assign og_type = "website" -%}
     {%- endif -%}
+    <title data-rh="true">{{page.title}}</title>
+
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="{{favicon}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta  data-rh="true" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="{{site.keyboard}}">
     <meta name="description" content="{{ seo_description}}">
-    <meta name="og:description" content="{{ seo_description}}">
-    <meta property="og:title" content="{{ page.title | default: site.title }}">
-    <meta property="og:type" content="{{og_type}}">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="{{site.name}}">
-    <meta property="og:url" content="{{site.url | append:  page.url}}">
+    <meta data-rh="true" property="description" content="{{ seo_description}}">
+    <meta data-rh="true" property="og:description" content="{{ seo_description}}">
+    <meta data-rh="true" property="og:title" content="{{ page.title | default: site.title }}">
+    <meta data-rh="true" property="og:type" content="{{og_type}}">
+    <meta data-rh="true" property="og:locale" content="en_US">
+    <meta data-rh="true" property="og:site_name" content="{{site.name}}">
+    <meta data-rh="true" property="og:url" content="{{site.url | append:  page.url}}">
+
+
+    <meta data-rh="true" property="twitter:domain"  content="{{site.url  | append:  page.url}}">
+    <meta data-rh="true" property="twitter:url"  content="{{site.url | append:  page.url}}">
+    <meta data-rh="true" name="twitter:title"  content="{{ page.title | default: site.title }}">
+    <meta data-rh="true" name="twitter:description"  content="{{ seo_description}}">
+    <meta data-rh="true" name="twitter:image:src" content="{{site.url | append: favicon}}">
+
+    <meta name="subject" content="Education">
+    <meta name="copyright" content="{{site.url}}">
+    <meta name="identifier-URL" content="{{site.url}}">
+    <meta name="designer" content="{{site.designer}}">
     <meta name="author" content="{{ site.author_name  }}">
-    <title>{{page.title}}</title>
+    
 
      <!-- Favicon-->
-     <link rel="shortcut icon" href="{{ site.favicon | relative_url }}">
+     <link rel="shortcut icon" href="{{ favicon | relative_url }}">
     
      <!-- fonts -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
