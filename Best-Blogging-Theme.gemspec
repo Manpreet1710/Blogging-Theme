@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "best-blogging-theme"
-  spec.version       = "0.1.5"
+  spec.version       = "0.1.6"
   spec.authors       = ["manpreet-choudhary"]
   spec.email         = ["rc4329915@gmail.com"]
 

@@ -1,4 +1,5 @@
 {%- assign footerData = site.data.blog.footer.footerMenu.dropdown -%}
+{%- assign footerData2 = site.data.blog.footer -%}
 <div class="container-fluid">
     <div class="main_row row py-5 px-5 mx-0">
         <div class="col-md-10 mx-auto">
@@ -20,7 +21,8 @@
                         <input type="text" placeholder="Enter Your Email" class="input__design">
                     </div>
                     <a href="#">
-                        <button class="my_btn mt-3" value="Enter Your Email">Submit</button>
+                        <button class="my_btn mt-3" value="Enter Your Email"
+                        style="background-color:{{footerData2.color}}">Submit</button>
                     </a>
                 </div>
                 <div class="col-12 mt-2">
@@ -28,7 +30,7 @@
                     <div class="icons d-flex align-items-center justify-content-center">
                         {%- for item in site.data.blog.footer.socialIcon -%}
                         <a target="{{item.target}}" href="{{item.href}}">
-                            <i class="{{item.i}} s_link"></i>
+                            <i class="{{item.i}} s_link" style="color:{{footerData2.color}}"></i>
                         </a>
                         {%- endfor -%}
                     </div>
@@ -37,7 +39,7 @@
         </div>
     </div>
 </div>
-<div class="row m-0 py-3" style="background-color: #00ab6b;">
+<div class="row m-0 py-3" style="background-color: {{footerData2.color}};">
     <div class="col-12">
         <div class="d-flex justify-content-between px-md-5 px-0 footer__flexbox">
             <p class="m-0 text-white">{{site.copyright_text}}</p>

@@ -310,7 +310,9 @@ after that you can see that comment system added to your website.
 
 
 ## Theme Demo
-## http://thefrondend.com/
+## https://thefrondend.com/
+
+## https://ultimateshyari.netlify.app/
 
 
 
