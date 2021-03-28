@@ -1,25 +1,364 @@
----
-permalink: /404.html
-layout: blog
----
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+<!DOCTYPE html>
+<html>
+<!--/Head-->
+<head>
+    <title>404 Page not Found</title>
+    <!-- Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
+    <!--/google-fonts-->
+    <link href="//fonts.googleapis.com/css2?family=Work+Sans:wght@300;600;700&display=swap" rel="stylesheet">
+    <!--//google-fonts-->
+    <style>
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    color: #585858;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*  wrapper */
+.wrapper {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        max-width: 1140px;
+    }
+}
+
+/*  /wrapper */
+
+.d-grid {
+    display: grid;
+}
+
+button,
+input,
+select {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+button,
+.btn,
+select {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+form,
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* content */
+
+/*
+  Responsive form elements
+  Flexbox layout
+*/
+
+/*/////////////// GLOBAL STYLES ////////////////////*/
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+/* error page */
+.w3l-error-grid {
+  background: url(/assets/images/bg.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  z-index: 0;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+  display:grid;
+}
+.w3l-error-grid:before {
+  content: "";
+  background: rgb(1 17 1 / 70%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  min-height: 100vh;
+}
+
+.error-block-grids {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:30px;
+  padding-top: 10em;
+}
+.w3l-error-grid h1 {
+  font-size: 180px;
+  display: flex;
+  align-items: center;
+  color:#fff;
+}
+
+.w3l-error-grid h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+.error-block-left i{
+color:#c8f1d5
+}
+.error-block i {
+  color:#fb8500;
+}
+
+.w3l-error-grid .form-control {
+  width: 100%;
+  background:#fff;
+  padding: 12px 140px 12px 25px;
+  font-size: 18px;
+  line-height: 28px;
+  height: 55px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  display: block;
+}
+
+.w3l-error-grid .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #fb8500;
+}
+
+.w3l-error-grid button.btn.search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 55px;
+}
+
+.w3l-error-grid .form-inline.search-form {
+  position: relative;
+  max-width: 500px;
+}
+.w3l-error-grid .btn-style {
+  padding: 13px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 30px;
+  background:#fb8500;
+  border: none;
+  transition: all .25s ease-in-out;
+}
+.w3l-error-grid .btn-style:hover{
+  background:#e85d04;
+}
+.w3l-error-grid .back-button {
+  font-weight: 600;
+  display: inline-block;
+  font-size: 18px;
+  color:#fff;
+  letter-spacing: 0;
+  margin-top:30px;
+}
+
+.w3l-error-grid .back-button span {
+  font-size: 14px;
+  vertical-align: 1px;margin-right:4px;
+}
+.w3l-error-grid p{
+  color: #fff;
+  margin: 20px 0 30px 0;
+  line-height: 28px;
+  opacity: 0.9;
+  font-size: 17px;
+}
+.w3l-error-grid .back-button:hover {
+  color:#fb8500;
+  opacity:0.8;
+}
+.w3layouts-footer {
+  text-align: center;
+}
+.w3layouts-footer p.copy-footer-29,
+.w3layouts-footer p.copy-footer-29 a {
+    font-weight: 400;
+    color: #fff;
+    font-size: 1em;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+.w3layouts-footer p.copy-footer-29 a{
+  color:#fb8500;
+  transition: 0.3s;
+}
+.w3layouts-footer p.copy-footer-29 a:hover{
+  text-decoration:underline;
+}
+@media all and (max-width: 991px) {
+  .w3l-error-grid h1 {
+    font-size: 160px;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+
+}
+
+@media all and (max-width: 768px) {
+  .w3l-error-grid h1 {
+    font-size: 140px;
   }
-</style>
+}
+@media all and (max-width:736px) {
+  .error-block-grids {
+    display: grid;
+    align-items: center;
+    grid-template-columns:1fr;
+    grid-gap:30px;
+    padding-top:6em;
+  }
+}
+@media all and (max-width: 384px) {
+  .w3l-error-grid h1 {
+    font-size: 120px;
+  }
 
-<div class="container">
-  <h1>404</h1>
+  .w3l-error-grid h2 {
+    font-size: 25px;
+  }
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  .w3l-error-grid button.btn.search {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .error-block img {
+    width: 100px;
+  }
+
+  .w3l-error-grid h1 {
+    font-size: 80px;
+  }
+}
+
+/* //error page */
+
+
+    </style>
+    </head>
+<!-- //Head -->
+<!-- Body -->
+<body>
+   <!-- 404 error page -->
+   <div class="w3l-error-grid">
+    <div class="wrapper">
+        <div class="error-block-grids">
+            <div class="error-block-left">
+                <h1>4<i class="fas fa-sad-tear"></i>4</h1>
+            </div>
+            <div class="error-block-right">
+                <h2 class="mt-5">Oops, Page not found!</h2>
+                <p class="mt-sm-4 mt-3">Sorry, we're offline right now to make our site even better. Please,
+                    comeback
+                    later and
+                    check what we've
+                    been upto.</p>
+                <form class="form-inline search-form mt-md-5 mt-4" action="#" method="post">
+                    <input class="form-control" type="search" placeholder="Search here" aria-label="email"
+                        required="">
+                    <button class="btn btn-style search" type="submit">Search</button>
+                </form>
+                <a href="/" class="tn back-button mt-md-5 mt-4"> <span
+                        class="fa fa-arrow-left"></span>
+                    Back to Home</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="w3layouts-footer">
+        <p class="copy-footer-29">© 2021 FrondEnd Page. All rights reserved.Design by <a href="https://w3layouts.com/" target="_blank">
+            W3layouts</a></p>
+    </div>
 </div>
+<!-- //404 error page -->
+
+</body>
+<!-- //Body -->
+</html>
