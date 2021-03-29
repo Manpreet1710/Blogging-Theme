@@ -28,7 +28,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-include-cache
-google_analytics: 'G-PWRSRVE5S5'
+google_analytics: 'G-Your Id'
 hero: product_fixed_image
 exclude:
   - Gemfile
