@@ -14,6 +14,8 @@ comments: true
 ![](/uploads/FrontEndDeveloper.jpg)
 
 
+
+<pre>What is a End Developer?</pre>
 ss
 What is a Front End Developer?
 
