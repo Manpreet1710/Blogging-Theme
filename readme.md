@@ -196,6 +196,7 @@ platforms:
 #### footer.json 
 {
     "footerMenu": {
+      "color": "deepskyblue",
       "dropdown": [{
        "categoryName":"Cricket Posts",
        "links": [
@@ -303,6 +304,14 @@ disquss:
 
 after that you can see that comment system added to your website.
 
+
+## so now you can also change color of theme for ex:) footer color,socialicons,expore section etc. and also added google analtyics
+
+you just need to put you google analatyics id in _config.yml
+for example look like- 
+google_analytics: 'G-Your Id'
+
+and also change the color in data driven files that we will provide in the top. now updated you can see that );;
 
 
 ## ENJOY THE BLOGGING THEME
