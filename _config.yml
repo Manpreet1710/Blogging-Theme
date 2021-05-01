@@ -29,6 +29,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 google_analytics: 'G-Your Id'
+google_site_verification: 'Your_SITe_Verification_Id'
 hero: product_fixed_image
 exclude:
   - Gemfile

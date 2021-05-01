@@ -5,7 +5,6 @@
 
 <body>
     {%- include header/index.html -%}
-
     <section class="section_post">
         <div class="container px-5">
             <div class="row justify-content-center section-title-wrap">
@@ -26,10 +25,10 @@
 
               <div class="row">
                 {% for post in paginator.posts%}
-                <div class="col-lg-3 col-md-6 mb-4 card-group">
+                <div class="col-lg-4 col-md-6 mb-4 card-group">
                     <div class="card h-100" style="border-radius:16px" id="{{post.categories}}">
                         <a href="{{ post.url }}">
-                            <img src="{{ post.image }}" class="card-img-top p-3" style="border-radius: 25px;"
+                            <img src="{{ post.image }}" class="card-img-top p-3" style="border-radius: 25px; height: 180px;"
                                 alt="not found">
                         </a>
                         <div class="card-body">
@@ -64,6 +63,9 @@
 
         {% include section/count.html %}
     </section>
+
+    {%- include section/recent_posts.html -%}
+    <!-- {% include section/faq.html %} -->
 
     {% include footer/index.html %}
 

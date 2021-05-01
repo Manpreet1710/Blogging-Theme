@@ -1,5 +1,6 @@
 <!-- start Header Area -->
-<div class="container-fluid navigationBottomLine">
+{%- assign theme = site.data.theme.UI -%}
+<div class="container-fluid navigationBottomLine" style="background: {{theme.color}};">
     <div class="container samePad">
         <header>
             {% include header/nav-menu.html %}

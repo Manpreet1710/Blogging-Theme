@@ -1,14 +1,18 @@
 {
-    "navbarBrandText": "",
+    "navbarBrandText": "BestBloggingTheme",
     "navbarBrandLogo": "/assets/images/bebo-logo.svg",
     "navItems":[
         {
-         "name":"",
+         "name":"Home",
          "url":""
-        },
-        {
-         "name":"",
-         "url":""
-       }
+       },
+       {
+        "name":"About",
+        "url":""
+      },
+      {
+        "name":"Blog",
+        "url":""
+      }
      ]
 }

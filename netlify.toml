@@ -1,0 +1,5 @@
+[build]
+	context = "development"
+
+[context.development.environment]
+	JEKYLL_ENV = "development"

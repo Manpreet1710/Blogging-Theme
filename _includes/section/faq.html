@@ -1,0 +1,32 @@
+
+{%- assign fileName = page.fileName -%}
+{%- assign folderName = page.folderName -%}
+{%- assign lang = page.lang -%}
+
+<!-- Theme Config -->
+<!-- {%- assign theme = site.data.theme.UI -%}
+
+{% if lang %}
+{%- assign dataToShow  = site.data[folderName][lang][fileName] -%}
+
+{% elsif folderName %}
+{%- assign dataToShow  = site.data[folderName][fileName] -%}
+
+{% else %}
+{%- assign dataToShow  = site.data[fileName] -%}
+{% endif %}
+
+
+{% if dataToShow %}
+<h1 class="faq_heading">{{dataToShow.faq_heading}}</h1>
+{% endif %}
+<main>
+    {% for entry in dataToShow.faqList%}
+    <details>
+        <summary style="background-color: {{theme.color}}">{{entry.question}}</summary>
+        <div class="faq__content">
+            <p>{{entry.answer}}</p>
+        </div>
+    </details>
+    {% endfor %}
+</main> 

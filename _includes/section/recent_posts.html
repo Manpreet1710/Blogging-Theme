@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="relatedPosts">
+<h1 class="related_post_heading">Recent Posts</h1>
+<div class="row">
+{% for recent in site.posts offset:1 limit:3 %}
+{% if recent.url != page.url %}
+<div class="col-lg-4 col-md-6 mb-4 card-group">
+    <div class="card h-100">
+        <a href="{{ recent.url }}">
+            <img src="{{ recent.image }}" class="card-img-top" alt="" style="height: 180px">
+        </a>
+        <div class="card-body">
+            <a class="text-decoration-none text-dark" href="{{ recent.url }}" class="anchor_link">
+                <h4 class="card-title mb-4 text-left">{{ recent.title }}</h4>
+            </a>
+        </div>
+        {% assign author = site.data.blog.authors[recent.author] %}
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                {% if recent.author %}
+                <span class="meta-footer-thumb">
+                    <img class="author-thumb" src="{{ author.image }}" alt="{{ author.name }}">
+                </span>
+                {% endif %}
+
+                <span class="author-meta">
+                    <span class="recent-name">
+                        <a target="_blank" href="/blog">{{recent.author}}</a>
+                    </span><br>
+                    <span class="post-date">{{recent.date | date_to_string }}</span>
+                </span>
+                <span class="post-read-more"><a class="text-dark" href="{{ recent.url }}"
+                        title="Read Story">Read More</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+</div>
+</div>

@@ -1,9 +1,9 @@
 ---
 tags: []
 categories:
-  - Webdeveloper
+  - dummy
 layout: post
-title: How to Become a Front-End Developer - A Step by Step 2021 Guide
+title: How to test
 image: '/uploads/men.png'
 author: Manpreet
 description: ''
