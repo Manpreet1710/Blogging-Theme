@@ -1,59 +1,63 @@
 {
-    "footerMenu": {
-        "dropdown": [{
-         "categoryName":"Cricket Posts",
-         "links": [
+
+
+"categoryName":"WebDevelopment",
+
+
+"QuickLinks":[
+          {
+              "target": "_blank",
+              "name": "About",
+              "url": "/about"
+          },
+              {
+              "target": "_blank",
+              "name": "Contact",
+              "url": "/contact"
+          },
+              {
+              "target": "_blank",
+              "name": "Sitemap",
+              "url": "/sitemap.xml"
+          }, 
             {
-              "name": "blog1",
-              "url":"/"
-            },
-            {
-              "name": "blog2",
-              "url":"/"
-            },
-            {
-              "name": "blog3",
-              "url":"/"
-            }
-          ]
-        },
-        {
-          "categoryName":"Latest Posts",
-          "links": [
-             {
-               "name": "blog1",
-               "url":"/"
-             },
-             {
-              "name": "blog1",
-              "url":"/"
-            },
-            {
-              "name": "blog1",
-              "url":"/"
-            }
-            
-           ]
-         },
-         {
-          "categoryName":"Website Name",
-          "links": [
-             {
-               "name": "Terms and conditions",
-               "url":"/"
-             },
-             {
-               "name": "Privacy Policy",
-               "url":"/"
-             },
-             {
-               "name": "Disclaimer",
-               "url":"/"
-             }
-           ]
-         }
-        ]
-      },
+              "target": "_blank",
+              "name": "Github Repo",
+              "url": "https://github.com/ManpreetChoudhary/Blogging-Theme"
+          }, 
+      ],
+
+
+
+"StaticPages":[
+          {
+              "target": "_blank",
+              "name": "Terms and conditions",
+              "url": "/terms-and-conditions"
+          },
+              {
+              "target": "_blank",
+              "name": "Privacy Policy",
+              "url": "/privacy-policy"
+          },
+              {
+              "target": "_blank",
+              "name": "Disclaimer",
+              "url": "/disclaimer"
+          }
+          
+      ],
+
+
+
+
+
+
+
+
+
+
+
   
       "socialIcon":[
           {

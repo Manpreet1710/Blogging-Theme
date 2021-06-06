@@ -1,3 +1,4 @@
 {
-    "color": "#0F0E15"
+    "color": "#0F0E15",
+    "staticPagesColor": "rgba(0,0,0,0.2)"
 }

@@ -1,0 +1,66 @@
+{%- assign theme = site.data.theme.UI -%}
+<!-- Start page-top section -->
+<section class="page-top-section" style="background: {{theme.staticPagesColor}}">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <h1 class="text-white">About</h1>
+            </div>
+            <div class="col-lg-6  col-md-6 page-top-nav" style="text-align: right;">
+                <div>
+                    <a href="/" class="text-white">Home</a>
+                    <i class="fa fa-arrow-right text-white"></i>
+                    <a href="/about" class="text-white">About</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End page-top section -->
+
+<!-- Start main body content -->
+<section class="features-content section-gap">
+    <div class="container">
+        <h3 class='subheading text-center'>About this Website</h3>
+        <h5>Introduction</h5>
+      
+          <h5 className='mt-4'>Who founded {{site.name}}?</h5>
+          <p className='about_colors_p'>
+          {{site.name}} founded by
+            <a href='{{site.url}}'
+              className='same'
+              target='_blank'
+            >
+          {{site.author}}
+            </a>
+           
+            <a
+              href='https://manpreetchoudhary.github.io/'
+              target='_blank'
+              className='same'
+            >
+        </a>
+              &nbsp;Manpreet Singh. (WEB DEVELOPER)
+          </p>
+  
+          <h5 className='mt-4'>Contact us</h5>
+          <p className='about_colors_p'>
+            If you have any quieries, suggestions or other requests feel free
+            to contact us! <br>We are always happy to hear from you!
+          </p>
+          <span>
+            <strong>Email:&nbsp; </strong>
+          </span>
+          <a href='mailto: {{site.email}}'>{{site.email}}</a>
+          <br />
+          <span>
+            <strong>Instagram: &nbsp;</strong>
+          </span>
+          <a
+            href='{{site.instagram_username}}'
+            target='_blank'
+          >
+           {{site.instagram_username}}
+          </a>
+    </div>
+</section>

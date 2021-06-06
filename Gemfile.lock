@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    best-blogging-theme (0.2.1)
+    blogging-site-theme (0.1.1)
       jekyll (~> 3.9)
 
 GEM
@@ -76,7 +76,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  best-blogging-theme!
+  blogging-site-theme!
   bundler
   jekyll-feed
   jekyll-include-cache

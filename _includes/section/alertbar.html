@@ -1,3 +1,4 @@
+{%- assign theme = site.data.theme.UI -%}
 <div class="alertbar" style="display: none;">
     <div class="container text-center">
         <span style="font-size: 15px;">{{site.data.blog.alertbar.span}}</span>
@@ -5,7 +6,7 @@
             <div class="mc-field-group">
                 <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"
                     autocomplete="on" required="">
-                <input type="submit" value="Subscribe" name="subscribe">
+                <input type="submit" style="background: {{theme.color}}; border: {{theme.color}}" value="Subscribe" name="subscribe">
             </div>
         </form>
     </div>

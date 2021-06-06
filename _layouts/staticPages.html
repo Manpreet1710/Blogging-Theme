@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include custom-head.html %}
+
+<body>
+    {%- include header/index.html -%}
+    <section class="section_post p-0">
+        <div class="container-fluid  p-0 m-0">
+         
+            <!-- categories post -->
+            <div class="main-content p-0">
+                {{content}}
+            </div>
+            <!-- close -->
+
+    {% include footer/index.html %}
+
+    {% include scripts.html %}
+</body>
+
+</html>

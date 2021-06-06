@@ -1,51 +1,93 @@
-{%- assign footerData = site.data.blog.footer.footerMenu.dropdown -%}
-{%- assign footerData2 = site.data.blog.footer -%}
-<div class="container-fluid">
+{%- assign footer = site.data.blog.footer -%}
+{%- assign theme = site.data.theme.UI -%}
+
+<style>
+.anchr__link{
+text-decoration: none;
+}
+.anchr__link:hover{
+text-decoration: underline;
+}
+@media(max-width:768px){
+    .footer_Media{
+        padding: 2rem;
+    }
+}
+</style>
+   
+<div class="container-fluid py-5 px-0">
+<div style="border-top: 1px solid rgba(0, 0, 0, 0.1);"></div>
     <div class="main_row row py-5 samePad mx-0">
-        <div class="col-md-10 mx-auto">
+        <div class="col-md-11 mx-auto footer_Media">
             <div class="row d-flex  justify-content-between">
-                {%- for item in footerData -%}
-                <div class="col-md-2">
-                    <p class="font-weight-bold footer_subheading">{{item.categoryName}}</p>
-                    {%- for item in item.links -%}
-                    <p><a class="footer__link" href="{{item.url}}">{{item.name}}</a></p>
-                    {% endfor %}
+               <div class="col-md-3">
+                <p class="font-weight-bold footer_subheading">{{footer.categoryName}}</p>
+                   {%- for item in site.posts  limit: 4-%}
+                   <a class="anchr__link" href="{{item.url}}" style="color: {{theme.color}}">
+                   <p class="text-muted">{{item.title | truncate: 35,  }}</p>
+                   </a> 
+                  {% endfor %}
                 </div>
-                {% endfor %}
-               
+
+                <div class="col-md-2">
+                <p class="font-weight-bold footer_subheading">Quick Links</p>
+                   {%- for item in footer.QuickLinks  -%}
+                   <a class="anchr__link" href="{{item.url}}" target="{{item.target}}" style="color: {{theme.color}}">
+                   <p class="text-muted">{{item.name   }}</p>
+                   </a> 
+                  {% endfor %}
+                </div>
+              
+                <div class="col-md-2">
+                <p class="font-weight-bold footer_subheading">{{site.name}}</p>
+                   {%- for item in footer.StaticPages  -%}
+                   <a class="anchr__link" href="{{item.url}}" target="{{item.target}}"  style="color: {{theme.color}}">
+                   <p class="text-muted">{{item.name}}</p>
+                   </a> 
+                  {% endfor %}
+                </div>
+
+        
                 <div class="col-md-4">
                     <p class="footer_subheading">Feedback</p>
-                    <p> Share your expierence with Math-World</p>
+                    <p> Share your expierence with {{site.name}}</p>
                     <div class="input_div">
                         <i class="far fa-envelope"></i>
                         <input type="text" placeholder="Enter Your Email" class="input__design">
                     </div>
-                    <a href="#">
+                    <a  href="#">
                         <button class="my_btn mt-3" value="Enter Your Email"
-                        style="background-color:{{footerData2.color}}">Submit</button>
+                        style="background-color:{{theme.color}}">Submit</button>
                     </a>
                 </div>
+
                 <div class="col-12 mt-2">
                     <p class="footer_subheading text-center">Follow us on</p>
                     <div class="icons d-flex align-items-center justify-content-center">
                         {%- for item in site.data.blog.footer.socialIcon -%}
                         <a target="{{item.target}}" href="{{item.href}}">
-                            <i class="{{item.i}} s_link" style="color:{{footerData2.color}}"></i>
+                            <i class="{{item.i}} s_link" style="color:{{theme.color}}"></i>
                         </a>
                         {%- endfor -%}
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            
 </div>
-<div class="row m-0 py-3" style="background-color: {{footerData2.color}};">
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="row m-0 py-3" style="background-color: {{theme.color}};">
     <div class="col-12">
-        <div class="d-flex justify-content-between px-md-5 px-0 footer__flexbox">
+        <!-- <div class="d-flex justify-content-between px-md-5 px-0 footer__flexbox">
             <p class="m-0 text-white">{{site.copyright_text}}</p>
-            <!-- <p class="m-0"><a class="footer__link" href="/about-us">About Us</a>
+            <p class="m-0"><a class="footer__link" href="/about-us">About Us</a>
                 <a class="footer__link" href="/contact-us">| Contact Us</a>
-            </p> -->
-        </div>
+            </p>
+        </div> -->
     </div>
 </div>

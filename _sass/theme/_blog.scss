@@ -240,3 +240,66 @@ a:hover {
     padding-top: 75px;
     display: inline-block;
 }
+
+
+/* BLOG-alertbar stlying */
+.alertbar {
+  box-shadow: 0 -3px 10px 0 rgba(0,0,0,.11);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  padding: 14px 0;
+  z-index: 1;
+ form {
+  display: inline-block;
+ }
+
+ input[type='email'] {
+  font-size: 0.85rem;
+  padding: 3px 40px 3px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1px solid #ddd;
+  border-right: 0;
+  margin-right: -10px;
+  height: 34px;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  outline: 0;
+} input[type='submit'] {
+  background-color: #1c9963;
+  border: 1px solid #1c9963;
+  color: #fff;
+  fill: #fff;
+  font-size: 12px;
+  border-radius: 0;
+  padding: 4px 10px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-weight: 600;
+  height: 34px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+}
+/* close */
+
+
+/* TNC PP DS stylre */
+.page-top-section{
+  background: #FF6060;
+  font-size: 16px;
+  padding-top: 250px;
+  padding-bottom: 40px;
+}
+.features-content{
+  padding: 120px 0;
+  font-size: 25px;
+  color: #50668f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+

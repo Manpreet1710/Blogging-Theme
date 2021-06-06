@@ -1,0 +1,44 @@
+{%- assign theme = site.data.theme.UI -%}
+<!-- Start page-top section -->
+<section class="page-top-section" style="background: {{theme.staticPagesColor}}">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <h1 class="text-white">Contact</h1>
+            </div>
+            <div class="col-lg-6  col-md-6 page-top-nav" style="text-align: right;">
+                <div>
+                    <a href="/" class="text-white">Home</a>
+                    <i class="fa fa-arrow-right text-white"></i>
+                    <a href="/contact" class="text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End page-top section -->
+
+<!-- Start main body content -->
+<section class="features-content section-gap">
+    <div class="container">
+     <span>
+            <strong>Email:&nbsp; </strong>
+          </span>
+          <a href='mailto: {{site.email}}'>{{site.email}}</a>
+          <br />
+          <span>
+            <strong>Instagram: &nbsp;</strong>
+          </span>
+          <a
+            href='{{site.instagram_username}}'
+            target='_blank'
+          >
+           {{site.instagram_username}}
+          </a>
+<br/>
+             <span>
+            <strong>PhoneNumber: &nbsp;</strong>
+            {{site.phone}}
+          </span>
+        </div>
+ </section>
