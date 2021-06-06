@@ -1,3 +1,8 @@
+-----------------------------
+DEMO  - https://bloggingwebsite.netlify.app/
+-------------------------------
+
+
 --------------------------------------
 # BEST-BLOGGING-THEME
 --------------------------------------
@@ -92,144 +97,170 @@ OR ANYWHERE ITS DEPEND UPON YOU.
 //ensure that file extention will be .html, if .md then i am sure that you blog post pagination won't works.
 
 ---
-layout: blog 
-title: BloggingSite  //Title of blog
+
+layout: blog
+title: BloggingSite //Title of blog
+
 ---
 
 another example:
+
 #### blog/index.html //inside blog folder
 
 ---
-layout: blog 
-title: BloggingSite  //Title of blog
+
+layout: blog
+title: BloggingSite //Title of blog
+
 ---
 
-*******************************
-CREATE FILE FOR CATEGORIES LAYOUT IN ROOT DIR:  
-*********************************
+---
+
+CREATE FILE FOR CATEGORIES LAYOUT IN ROOT DIR:
+
+---
 
 #### FOR EXAMPLE
+
 #### categories.md
+
 ---
+
 layout: categories
 title: BloggingSite Categories // TITLE OF BLOG Categories
 permalink: /categories
+
 ---
 
 #### IF YOU ARE USING BLOG LAYUT UNDER BLOG FOLDER
+
 ---
+
 layout: categories
 title: BloggingSite Categories // TITLE OF BLOG Categories
-permalink: /blog/categories  
+permalink: /blog/categories
+
 ---
 
-
-#### Now,  you can see blog layout is visible in your project.
+#### Now, you can see blog layout is visible in your project.
 
 THESE LAYOUTS DATA DRIVEN BY JSON DATA OR YML FILES, YOU IF YOU WANT CHANGE FOR EXAMPLE:
+
 #### TITLE, META, NAVLINK, LOGO, BLOGTITLE, TAGLINE, FOOTERLINK ETC.
 
+---
 
---------------------------------------------------------------------------
-#### CREATE blog(folder) in _data(dir), for ex:) _data/blog
+#### CREATE blog(folder) in \_data(dir), for ex:) \_data/blog
 
 UNDER THESE FOLLOWING JSON OR YML FILES. YOU CAN CHANGE DATA ACOORDING ON YOUR PROJECT.
 
 #### 1. authors.yml
+
 #### 2. blog.yml
+
 #### 3. nav.json
+
 #### 4. share.yml
+
 #### 5. footer.json
+
 #### 6. disquss comment system
 
 #### authors.yml // BLOG POST AUTHOR CAN CHANGE HERE.
 
 Manpreet:
-  name: Manpreet singh
-  image: /assets/images/manpreet.png
-  bio: Author4 of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo.
-  twitter: https://twitter.com/home
+name: Manpreet singh
+image: /assets/images/manpreet.png
+bio: Author4 of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo.
+twitter: https://twitter.com/home
 
-#### blog.yml  //CHANGE H1 OR TAGLING OF BLOG 
+#### blog.yml //CHANGE H1 OR TAGLING OF BLOG
+
 ---
+
 h1: Latest Posts from our Blog
 tagline: Best Blogging Site
 
---- 
-// REMOVE --- END OF THE LINE, ITS NOT REQUIRED. 
+---
+
+// REMOVE --- END OF THE LINE, ITS NOT REQUIRED.
 
 #### nav.json // NAVLINK CAN BE CHANGE .
+
 {
-    "navbarBrandText": "", //NAVTEXT LIKE "bloggingsite"
-    "navbarBrandLogo": "/assets/images/bebo-logo.svg",  //LOGO
-    "navItems":[
-        {
-         "name":"home",   //navlinks
-         "url":"/home"    // navurl
-        },
-        {
-         "name":"blog",
-         "url":"/blog"
-       }
-     ]
+"navbarBrandText": "", //NAVTEXT LIKE "bloggingsite"
+"navbarBrandLogo": "/assets/images/bebo-logo.svg", //LOGO
+"navItems":[
+{
+"name":"home", //navlinks
+"url":"/home" // navurl
+},
+{
+"name":"blog",
+"url":"/blog"
+}
+]
 }
 
 you can add nav links according to your requirements.
 
 #### share.yml //if you want change sharing handle then you can
-####  Sharing options at the bottom of the post.
-####  Icons from <https://fontawesome.com/>
+
+#### Sharing options at the bottom of the post.
+
+#### Icons from <https://fontawesome.com/>
 
 label: 'Share'
 platforms:
-  - type: Twitter
-    icon: 'fab fa-twitter'
-    link: 'https://twitter.com/intent/tweet?url=URL'
-  - type: Facebook
-    icon: 'fab fa-facebook-square'
-    link: 'https://www.facebook.com/sharer/sharer.php?u=URL'
-  - type: Linkedin
-    icon: 'fab fa-linkedin'
-    link: 'https://www.linkedin.com/sharing/share-offsite/?url=URL'
 
+- type: Twitter
+  icon: 'fab fa-twitter'
+  link: 'https://twitter.com/intent/tweet?url=URL'
+- type: Facebook
+  icon: 'fab fa-facebook-square'
+  link: 'https://www.facebook.com/sharer/sharer.php?u=URL'
+- type: Linkedin
+  icon: 'fab fa-linkedin'
+  link: 'https://www.linkedin.com/sharing/share-offsite/?url=URL'
 
-#### footer.json 
+#### footer.json
+
 {
-    "footerMenu": {
-      "color": "deepskyblue",
-      "dropdown": [{
-       "categoryName":"Cricket Posts",
-       "links": [
-          {
-            "name": "blog1",
-            "url":"/"
-          },
-          {
-            "name": "blog2",
-            "url":"/"
-          },
-          {
-            "name": "blog3",
-            "url":"/"
-          }
-        ]
-      },
-      {
-        "categoryName":"Latest Posts",
-        "links": [
-           {
-             "name": "blog1",
-             "url":"/"
-           },
-           {
-            "name": "blog1",
-            "url":"/"
-          },
-          {
-            "name": "blog1",
-            "url":"/"
-          }
-          
+"footerMenu": {
+"color": "deepskyblue",
+"dropdown": [{
+"categoryName":"Cricket Posts",
+"links": [
+{
+"name": "blog1",
+"url":"/"
+},
+{
+"name": "blog2",
+"url":"/"
+},
+{
+"name": "blog3",
+"url":"/"
+}
+]
+},
+{
+"categoryName":"Latest Posts",
+"links": [
+{
+"name": "blog1",
+"url":"/"
+},
+{
+"name": "blog1",
+"url":"/"
+},
+{
+"name": "blog1",
+"url":"/"
+}
+
          ]
        },
        {
@@ -279,12 +310,10 @@ platforms:
             "i": "fab fa-slack"
         }
     ]
+
 }
 
 <!-- IF YOU WANT TO CHANGE COPYRIGHT TEXT THEN GO TO CONFIG.YML FILE  AND EDIT COPYRIGHT TEXT VARIABLE -->
-
-
-
 
 #### disquss comment system
 
@@ -300,39 +329,22 @@ FOR EXAMPLE:
 CONFIG.YML
 
 disquss:
-   shortname: yourshortname
+shortname: yourshortname
 
 after that you can see that comment system added to your website.
 
-
 ## so now you can also change color of theme for ex:) footer color,socialicons,expore section etc. and also added google analtyics
 
-you just need to put you google analatyics id in _config.yml
-for example look like- 
+you just need to put you google analatyics id in \_config.yml
+for example look like-
 google_analytics: 'G-Your Id'
 
 and also change the color in data driven files that we will provide in the top. now updated you can see that );;
 
-
 ## ENJOY THE BLOGGING THEME
 
-
-
 ## Theme Demo
+
 ## https://thefrondend.com/
 
 ## https://ultimateshyari.netlify.app/
-
-
-
-
-
-
-
-
-
-
-
-         
-
-
