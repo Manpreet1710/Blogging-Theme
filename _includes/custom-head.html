@@ -68,7 +68,7 @@
   "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},
   "author": {
     "@type": "Person",
-    "name": {{ site.author_name | jsonify }}
+    "name": {{ site.author_name | jsonify }},
     "email": {{ site.email | jsonify }}
   }
   "publisher": {
