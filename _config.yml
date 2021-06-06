@@ -1,13 +1,13 @@
 name: Blog-theme 
 title: Blog Theme 
-email: rc4329915@gmail.com
+email: ms4110415@gmail.com
 address: sangrur, punjab
 phone: '8699594438'
 tagline: BlogTheme - Smartest and quickly creating bloging site.
 description: BlogTheme provides Creating Blog Site very easily step by step.
 baseurl: ''
 permalink: /blog/:title
-author_name: Manpreet Choudhary
+author_name: Manpreet singh
 designer: Ram chand
 url: https://example.com
 copyright_text: © 2020 Blog Theme 
