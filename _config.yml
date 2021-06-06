@@ -10,6 +10,8 @@ permalink: /blog/:title
 author_name: Manpreet singh
 designer: Ram chand
 url: https://example.com
+img_width: 100%
+img_height: 200px
 copyright_text: © 2020 Blog Theme 
 facebook_username: https://www.facebook.com/
 twitter_username: https://twitter.com/
