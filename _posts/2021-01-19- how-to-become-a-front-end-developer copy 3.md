@@ -12,9 +12,8 @@ comments: true
 
 ![](/uploads/FrontEndDeveloper.jpg)
 
-
-
 <pre>What is a End Developer?</pre>
+
 ss
 What is a Front End Developer?
 
@@ -23,6 +22,5 @@ What is a Front End Developer?
 Front End Developer Salary.?
 
 What’s the Future of Front End Developers?
-
 
 ![](/uploads/FrontEndDeveloper.jpg)
